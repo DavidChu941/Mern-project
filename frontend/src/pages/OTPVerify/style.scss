@@ -1,0 +1,47 @@
+@import '../../variable';
+
+.otpVerifyBox {
+  width: 450px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	.titleBox {
+		.title {
+			font-size: 24px;
+			color: #282828;
+		}
+		.caption {
+			font-size: 14px;
+			color: #949CA9;
+			margin-top: 10px;
+      span {
+        color: $primary-color;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+		}
+	}
+  .subBox {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+  }
+	.errorText {
+		font-size: 13px;
+		color: red;
+		margin-top: -5px;
+	}
+	.errorFalse {
+		font-size: 13px;
+		color: white;
+		margin-top: -5px;
+	}
+	@media (max-width: 500px) {
+		padding: 0px 10px;
+		width: auto;
+	}
+}

@@ -1,0 +1,72 @@
+@import '../../variable.scss';
+
+.common-table {
+  width: 100%;
+  overflow-x: auto;
+  table, th, td {
+    border: 1px solid rgba($color: $primary-color, $alpha: 0.2);
+    border-collapse: collapse;
+    text-align: center;
+  }
+  .table-content {
+    width: 100%;
+
+    th {
+      background-color: $primary-color;
+      font-weight: 500;
+      color: white;
+    }
+    th, td {
+      padding: 10px;
+    }
+    .actionBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      
+    }
+    .allowText {
+      cursor: pointer;
+      color: $primary-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .declineText {
+      color: red;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .red-text {
+      color: red;
+    }
+    .green-text {
+      color: $primary-color;
+    }
+    .black-text {
+      color: black;
+    }
+    .actionBox {
+      .devider {
+        height: 15px;
+        width: 1px;
+        background-color: black;
+      }
+      .activeBtn {
+        cursor: pointer;
+        color: $primary-color;
+      }
+      .inactiveBtn {
+        cursor: pointer;
+        color: red;
+      }
+      .declineBtn {
+        cursor: pointer;
+      }
+    }
+  }
+}

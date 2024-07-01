@@ -1,0 +1,159 @@
+@import '../../variable';
+
+.dashboard-container {
+  .numberCardBox {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+			flex-wrap: nowrap;
+      flex-direction: column;
+		}
+  }
+  .numberCard {
+    @media (max-width: 768px) {
+			width: -webkit-fill-available;
+		}
+    .left {
+      width: 46px;
+      height: 46px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .employeeBg {
+      background-color: rgba($color: #8280FF, $alpha: 0.21);
+    }
+    .orderBg {
+      background-color: rgba($color: #FEC53D, $alpha: 0.21);
+    }
+    .consortiumBg {
+      background-color: rgba($color: #4AD991, $alpha: 0.21);
+    }
+    .poolsBg {
+      background-color: rgba($color: #FF9066, $alpha: 0.21);
+    }
+  }
+  .chartBox {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    @media (max-width: 1200px) {
+			flex-direction: column;
+		}
+    .actionBox {
+      padding: 32px;
+      box-shadow: 0px 0px 5px 5px #F5F5F5;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media (max-width: 640px) {
+        padding: 16px 16px;
+      }
+      .actionTitle {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .detail {
+          font-size: 16px;
+          color: rgba($color: $primary-font, $alpha: 0.77);
+        }
+      }
+      .addCardBox {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .chartBoxSize {
+          width: 250px;
+          margin: auto;
+        }
+        .detailInfo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .detail {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .percentage {
+              font-weight: bold;
+              font-size: 28px;
+            }
+            .label {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              .postiveBadge {
+                width: 15px;
+                height: 15px;
+                background-color: $primary-color;
+                border-radius: 50%;
+              }
+              .negativeBadge {
+                width: 15px;
+                height: 15px;
+                background-color: #EFF4FB;
+                border-radius: 50%;
+                border: 1px solid white;
+              }
+              .label-name {
+                color: rgba($color: #282D32, $alpha: 0.8);
+                font-size: 16px;
+              }
+            }
+            .number {
+              font-weight: 400;
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+    .cardWidth-30 {
+      width: 30%;
+      @media (max-width: 1200px) {
+        width: auto;
+      }
+    }
+    .cardWidth-70 {
+      width: 70%;
+      @media (max-width: 1200px) {
+        width: auto;
+      }
+    }
+    .cardWidth-50 {
+      width: 50%;
+      @media (max-width: 915px) {
+        width: auto;
+      }
+    }
+    .chartContainer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      @media (max-width: 915px) {
+        flex-direction: column;
+      }
+    }
+  }
+  .notificationBox {
+    margin-top: 16px;
+    box-shadow: 0px 0px 5px 5px #F5F5F5;
+    padding: 32px 32px;
+    border-radius: 15px;
+    @media (max-width: 640px) {
+			padding: 16px 16px;
+		}
+    .noti-title {
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  }
+}

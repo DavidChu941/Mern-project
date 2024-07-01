@@ -1,0 +1,168 @@
+@import '../../variable';
+
+.banner {
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.tabBox {
+  display: flex;
+  width: 100%;
+  .tab {
+    margin-top: 16px;
+    width: 33.333%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    border: 1px solid rgba($color: $primary-color, $alpha: 0.2);
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @media (max-width: 1024px) {
+			font-size: 20px;
+		}
+    @media (max-width: 640px) {
+			font-size: 16px;
+		}
+    @media (max-width: 520px) {
+			font-size: 12px;
+      padding: 10px 0px;
+		}
+  }
+  .active {
+    background-color: $primary-color;
+    color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+.tabContentbox {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  .generalTab {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .generalTitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .companyName {
+        font-size: 26px;
+        font-weight: 600;
+        color: $primary-font;
+      }
+    }
+    .generalContent {
+      display: flex;
+      align-items: start;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .address {
+        border: 1px solid rgba($color: $primary-color, $alpha: 0.1);
+        display: flex;
+        padding: 15px 10px;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .addressTitle {
+          width: 170px;
+          color: $primary-color;
+          font-weight: 600;
+          font-size: 18px;
+          @media (max-width: 768px) {
+            width: 150px;
+          }
+        }
+        .addressContent {
+          color: #202224;
+          font-size: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 270px;
+          @media (max-width: 768px) {
+            flex-grow: 1;
+            width: auto;
+          }
+          .realAddress {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            @media (max-width: 1210px) {
+              flex-direction: row;
+              gap: 10px;
+            }
+            @media (max-width: 470px) {
+              flex-direction: column;
+              gap: 10px;
+            }
+          }
+          .otherAddress {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+          }
+        }
+      }
+      .otherInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .individualInfo {
+          display: flex;
+          border: 1px solid rgba($color: $primary-color, $alpha: 0.1);
+          padding: 10px;
+          .infoTitle {
+            width: 170px;
+            color: $primary-color;
+            font-size: 18px;
+            font-weight: 600;
+            @media (max-width: 768px) {
+              width: 150px;
+            }
+          }
+          .content {
+            width: 270px;
+            color: #202224;
+            font-size: 16px;
+            @media (max-width: 768px) {
+              flex-grow: 1;
+              width: auto;
+            }
+          }
+        }
+      } 
+    }
+  }
+}
+
+.modal-container {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .subRow {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    .inputBox {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 50%;
+      .inputTitle {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
